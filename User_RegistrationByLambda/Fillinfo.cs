@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Linq;
+
+namespace User_RegistrationByLambda
+{
+    public class Fillinfo
+    {
+        public void fill()
+        {
+
+            RegistrationForm form = new RegistrationForm();
+            bool check = false;
+            Console.WriteLine("\nFirst name starts with Cap and has minimum 3 characters");
+            while (!check)
+            {
+                Console.Write("\nEnter your Name :");
+                check = form.Firstname(Console.ReadLine());
+
+                if (!check)
+                {
+                    Console.WriteLine("\nplease follow - First name starts with Cap and has minimum 3 characters ");
+                }
+                else
+                {
+                    Console.WriteLine("******done");
+                }
+
+
+            }
+        }
+    }
+}
