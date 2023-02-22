@@ -93,7 +93,7 @@ namespace User_RegistrationByLambda
                 
                 if (!check)
                 {
-                    Console.WriteLine("\nPlease follow -  Password must have minimum 8 characters ");
+                    Console.WriteLine("\nPlease follow -  Password must have 1 Uppercase minimum 8 characters ");
 
                 }
                 else
