@@ -11,6 +11,7 @@ namespace User_RegistrationByLambda
     {
         public static string FirstName = @"^[A-Z][a-z]{2,}$";
         public static string LastName = @"^[A-Z][a-z]{2,}$";
+        public static string Email = @"^(?=[a-z])[a-z 0-9.!#+$%&_-]{3,}[@][a-z 0-9]{1,6}.(com|com.com|io|com.au|net|org)$";
 
 
     }
@@ -27,5 +28,12 @@ namespace User_RegistrationByLambda
             Regex lastname = new Regex(Pattern.LastName);
             return lastname.IsMatch(userLastName);
         }
+        public bool Email(string userEmail)
+        {
+            Regex email = new Regex(Pattern.Email);
+            return email.IsMatch(userEmail);
+        }
+
+
     }
 }

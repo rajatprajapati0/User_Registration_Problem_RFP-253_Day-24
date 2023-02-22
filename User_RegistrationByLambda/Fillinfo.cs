@@ -51,6 +51,24 @@ namespace User_RegistrationByLambda
 
 
             }
+            form = new RegistrationForm();
+            check = false;
+
+            while (!check)
+            {
+                Console.Write("Enter your email :");
+                check = form.Email(Console.ReadLine());
+
+                if (!check)
+                {
+                    Console.WriteLine("\nplease follow - please enter right email ");
+                }
+                else
+                {
+                    Console.WriteLine("*****done");
+                }
+
+            }
         }
     }
 }
