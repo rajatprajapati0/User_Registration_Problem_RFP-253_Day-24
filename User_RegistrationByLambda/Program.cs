@@ -8,7 +8,7 @@ namespace User_RegistrationByLambda
 
             Console.WriteLine(" welcome User_Registration Program");
          
-          Fillinfo fillinfo = new Fillinfo();
+            Fillinfo fillinfo = new Fillinfo();
             fillinfo.fill();
         
         }
